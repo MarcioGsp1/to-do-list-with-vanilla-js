@@ -23,6 +23,7 @@ button {
     align-items: center;
     transition: 0.4s;
     color:  #fff;
+    border-radius: 5px 10px;
 }
 
 button:hover {
@@ -47,7 +48,105 @@ input, select {
 /*.hide {
     display: none;}*/
 
+.todo-container {
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #87a5c9;
+    border-radius: 5px 30px;
+    padding: 13px;
+    box-shadow: 3px 5px;
+}    
+
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form p, #edit-form p {
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input{
+    margin: .3rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
     
+}
 
 
+#toolbar {
+    border-top: 1px solid #ccc;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
 
+#toolbar h4 {
+    margin: .5rem .5rem 0 .5rem;
+}
+
+#search {
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 65%;
+    margin-right: 0.3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: .35s;
+}
+
+#todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: #395169;
+}
+
+.done {
+    color: #fff;
+    text-dicoration: line-through;
+    font-style: italic;
+}

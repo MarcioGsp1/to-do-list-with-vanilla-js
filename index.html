@@ -21,10 +21,10 @@
         <h1>Lisa de tarefas</h1>
       </header>
 
-      <form>
+      <form id="todo-form">
         <p>Adicione a tarefa</p>
         <div class="form-control">
-          <input type="text" id="input" placeholder="O que voce vai fazer" />
+          <input type="text" id="input" placeholder="O que você vai fazer?" />
           <button type="submit">
             <i class="bi bi-plus"></i>
           </button>
@@ -34,7 +34,7 @@
       <form id="edit-form" class="hide">
         <p>Edite a sua terefa</p>
         <div class="form-control">
-          <input type="text" id="edit-input" />
+          <input type="text" id="edit-input" placeholder="O que quer editar?" />
           <button type="submit">
             <i class="bi bi-check2"></i>
           </button>
@@ -62,7 +62,7 @@
         </div>
       </div>
       <div id="todo-list">
-        <div class="todo">
+        <div class="todo done">
           <h3>something</h3>
           <button class="finish-todo">
             <i class="bi bi-check2"></i>
